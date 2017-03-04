@@ -36,7 +36,7 @@ fetchCats()
 		if(!cat.UnitWeight || cat.UnitWeight != "kg" || !cat.TotalWeight) return {};
 		
 		const name = cat.Name;
-		const weight = cat.TotalWeight.replace(cat.UnitWeight, "").trim();
+		const weight = parseFloat(cat.TotalWeight.replace(cat.UnitWeight, "").trim());
 		const isFemale = cat.Sex == "Female";
 		const id = cat.ShelterBuddyID;
 		const url = VIEW_URL + id;
