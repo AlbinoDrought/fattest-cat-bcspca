@@ -10,7 +10,7 @@ Install npm on Linux: `$ apt-get install npm`
 
 Install fattest cat using npm: `$ npm install -g fattest-cat-bcspca`
 
-Hint: installation may need to be done as root.
+Hint: installation may need root permissions.
 
 ## Usage
 
